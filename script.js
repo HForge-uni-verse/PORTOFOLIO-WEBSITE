@@ -40,7 +40,7 @@ const contactForm = document.querySelector(".contact form");
 const feedbackMessage = document.querySelector(".feedback-message");
 
 if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
+    contactForm.addEventListener("submit", async (event) => {
         event.preventDefault();
 
         const formData = new FormData(contactForm);
@@ -54,16 +54,34 @@ if (contactForm) {
             return;
         }
 
-        contactForm.reset();
+        try {
+            const response = await fetch("https://portofolio-backend-3xuh.onrender.com/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ name, email, message })
+            });
 
-        feedbackMessage.textContent =
-            `Thanks, ${name}! Your message has been received.`;
+            const data = await response.json();
 
-        feedbackMessage.classList.add("visible");
+            if (response.ok) {
+                contactForm.reset();
+                feedbackMessage.textContent = `Thanks, ${name}! Your message has been received.`;
+            } else {
+                feedbackMessage.textContent = data.message || "Failed to send message.";
+            }
 
-        setTimeout(() => {
-            feedbackMessage.classList.remove("visible");
-        }, 5000);
+            feedbackMessage.classList.add("visible");
+
+            setTimeout(() => {
+                feedbackMessage.classList.remove("visible");
+            }, 5000);
+
+        } catch (error) {
+            feedbackMessage.textContent = "Server error. Please try again later.";
+            feedbackMessage.classList.add("visible");
+        }
     });
 }
 

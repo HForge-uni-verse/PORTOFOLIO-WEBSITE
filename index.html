@@ -1,31 +1,56 @@
-<!DOCMENT html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HForge | Premium Portfolio Developer</title>
+    <meta name="description" content="HForge - Frontend Developer creating premium, responsive, and high-performance websites.">
+
+<meta name="keywords" content="Frontend Developer, Portfolio, HTML, CSS, JavaScript, React">
+
+<meta name="author" content="HForge">
+
+<meta name="theme-color" content="#0d1117">
+
+<link rel="icon" href="favicon.ico">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="loader">
+        <div class="loader-content">
+            <img src="2e08ccf5-e30e-4a7a-8d64-d88cb36f3682.jpg"alt="HForge Logo" class="loader-logo">
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p>Crafting Premium Experiences....</p>
+        </div>
+    </div>
+
     <header>
-        <h1>HForge</h1>
+        <a href="#home" class="logo"><img src="2e08ccf5-e30e-4a7a-8d64-d88cb36f3682.jpg" alt="HForge Logo"></a>
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
+        
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
+            <a href="#tools">Tools</a>
+            
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section class="hero" id="home">
         <div class="hero-text">
-            <p class="hero-tag">Premium design, performance-first development</p>
-            <h1>Crafting modern digital experiences<br>that convert visitors into customers.</h1>
+            <p class="hero-tag">🚀 Frontend Developer . UI Designer . Performance Focused</p>
+            <h1>Building Fast, Modern & Beautiful Websites That Make an Impact.</h1>
             <p>
-                I build responsive, polished websites and web applications that highlight your brand,
-                engage visitors, and deliver measurable results.
+                I design and develop premium, responsive websites with clean code, modern UI, and high performance-helping businesses and individuals build a strong online presence.
             </p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn">View Projects</a>
@@ -79,43 +104,134 @@
             </div>
         </div>
     </section>
+<section class="process hidden">
+    <h2>My Process</h2>
+    <p class="section-description">
+        Every project follows a structured workflow to ensure quality, performance, and a great user experience.
+    </p>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+            <h3>01</h3>
+            <h4>Research</h4>
+            <p>Understanding goals, audience, and project requirements.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>02</h3>
+            <h4>Design</h4>
+            <p>Creating clean layouts with a focus on usability and aesthetics.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>03</h3>
+            <h4>Development</h4>
+            <p>Writing responsive, optimized, and maintainable code.</p>
+        </div>
+
+        <div class="process-card">
+            <h3>04</h3>
+            <h4>Launch</h4>
+            <p>Testing thoroughly before delivering a polished final product.</p>
+        </div>
+
+    </div>
+</section>
+
+
 
     <section class="projects hidden" id="projects">
         <h2>Featured Projects</h2>
         <p class="section-description">A selection of recent work showcasing clean interfaces and polished user experiences.</p>
         <div class="project-grid">
             <div class="project-card">
-                <h3>Resaurant</h3>
-                <p>A responsive shopping experience with modern visuals and improved checkout flow.</p>
-                <a href="restaurant.html" class="btn">view project</a>
+                <div class="project-image">
+                  <img src="fd4bb049-d636-4cc4-9155-15825ae53617.jpg"alt="Restaurant Website">
+                </div>
+                  <div class="project-status">● Live Demo Project</div>
+                <h3>Restaurant Website</h3>
+                <p>A modern, fully responsive restaurant website with an elegant design and smooth user experience.</p>
+               <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    
+                </div>
+                <div class="project-info">
+    <span>📅 2026</span>
+    <span>⚡ Responsive</span>
+    <span>🎨 Premium UI</span>
+</div>
+                <a href="restaurant.html" class="btn">view Project</a>
             </div>
             <div class="project-card">
-                <h3>Gym Showcase</h3>
+                <div class="project-image">
+                <img src="e90b7367-8e0b-4fa8-8ffc-7424ee67cbf3.jpg" alt="Gym Website">
+                </div>
+                <div class="project-status">● Live Demo Project</div>
+                <h3>Gym Website</h3>
                 <p>A sleek personal brand website built to highlight work, services, and client wins.</p>
-                <a href="gym.html" class="btn">view project</a>
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="project-info">
+    <span>📅 2026</span>
+    <span>⚡ Responsive</span>
+    <span>🎨 Premium UI</span>
+</div>
+                <a href="gym.html" class="btn">view Project</a>
             </div>
             <div class="project-card">
-                <h3>Cafe Dashboard</h3>
+                <div class="project-image">
+                <img src="ff4d55e7-82ed-4e93-be3a-666621efe667.jpg"alt="Cafe Website">
+            </div>
+                <h3>Cafe Website</h3>
                 <p>Real-time sales data with interactive UI built using APIs and modern JavaScript.</p>
-                <a href="cafe.html" class="btn">view project</a>
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span> 
+                </div>
+                <div class="project-info">
+    <span>📅 2026</span>
+    <span>⚡ Responsive</span>
+    <span>🎨 Premium UI</span>
+</div>
+                <a href="cafe.html" class="btn">view Project</a>
             </div>
         </div>
     </section>
 
-    <section class="testimonials hidden">
-        <h2>What Clients Say</h2>
-        <p class="section-description">Feedback from businesses and founders who grew trust through clear, thoughtful web design.</p>
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <p>“HForge delivered an outstanding website that exceeded our expectations. The communication was excellent and the results were fast.”</p>
-                <span>— Priya, Startup Founder</span>
-            </div>
-            <div class="testimonial-card">
-                <p>“The site looks gorgeous on all devices and our customers noticed the improved clarity immediately.”</p>
-                <span>— Aman, Product Manager</span>
+   <section class="testimonials hidden">
+    <h2>Founders & Investors</h2>
+
+    <p class="section-description">
+        The people and partners supporting HForge's vision.
+    </p>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+            <h3>Founder</h3>
+            <p>Leading the vision, development, and future growth of HForge.</p>
+            <span>— Hassan, Founder</span>
+        </div>
+
+        <div class="testimonial-card">
+            <h3>Investors</h3>
+            <p>Supporting the growth and long-term vision of HForge.</p>
+            <div class="investor-list">
+                <p><span class="gold-name">— Priya Agency</span></p>
+                <p><span class="gold-name">— Sarfaraz-ul-Hassan</span></p>
+                <p><span class="gold-name">— Shamsheer-ul-Hassan</span></p>
             </div>
         </div>
-    </section>
+
+    </div>
+</section>
 
     <section class="skills hidden" id="skills">
     <h2>Skills</h2>
@@ -140,7 +256,57 @@
         <div class="bar"><span style="width:60%"></span></div>
     </div>
 </section>
+<section class="tools hidden" id="tools">
+    <h2>Tools I Use</h2>
 
+    <p class="section-description">
+        Professional technologies and tools I use to design, develop, and deliver modern web experiences.
+    </p>
+
+    <div class="tools-grid">
+
+        <div class="tool-card">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML5</h3>
+        </div>
+
+        <div class="tool-card">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS3</h3>
+        </div>
+
+        <div class="tool-card">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
+        </div>
+
+        <div class="tool-card">
+            <i class="fa-brands fa-react"></i>
+            <h3>React</h3>
+        </div>
+
+        <div class="tool-card">
+            <i class="fa-brands fa-node-js"></i>
+            <h3>Node.js</h3>
+        </div>
+
+        <div class="tool-card">
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+        </div>
+
+        <div class="tool-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>VS Code</h3>
+        </div>
+
+        <div class="tool-card">
+            <i class="fa-brands fa-figma"></i>
+            <h3>Figma</h3>
+        </div>
+
+    </div>
+</section>
 
     <section class="contact hidden" id="contact">
         <h2>Contact</h2>
@@ -171,6 +337,7 @@
     </section>
 
     <footer>
+        <img src="2e08ccf5-e30e-4a7a-8d64-d88cb36f3682.jpg" alt="HForge Logo" class="footer-logo">
     <p>Ready to build something great? Reach out and let's create a website your customers love.</p>
 
     <div class="socials">
@@ -179,10 +346,12 @@
 </div>
 
     <p>&copy; 2026 HForge. Designed with ❤️ by HForge.</p>
+    <p class="footer-tagline">Building premium digital experiences with passion and precision.</p>
 </footer>
 
     <canvas id="particles"></canvas>
 <div class="cursor-glow"></div>
+<button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
 <script src="script.js"></script>
 </body>
 </html>

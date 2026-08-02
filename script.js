@@ -95,3 +95,38 @@ if (glow) {
         glow.style.top = e.clientY + "px";
     });
 }
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+        backToTop.classList.add("show");
+    } else {
+        backToTop.classList.remove("show");
+    }
+});
+
+backToTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+// =====================================
+// PREMIUM LOADER
+// =====================================
+
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+
+    setTimeout(() => {
+        loader.classList.add("hide");
+
+        setTimeout(() => {
+            loader.remove();
+        }, 800);
+
+    }, 1800);
+});
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("loaded");
+});

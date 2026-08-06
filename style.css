@@ -742,11 +742,7 @@ img{
     transform:translateY(-6px) scale(1.05);
     box-shadow:0 18px 40px rgba(212,175,55,.5);
 }
-.project-card img{
-    width:100%;
-    border-radius:18px;
-    margin-bottom:20px;
-}
+
 .investor-list{
     display:flex;
     flex-direction:column;
@@ -805,17 +801,25 @@ img{
 }
 .project-image{
     overflow:hidden;
-    border-radius:18px;
-    margin-bottom:25px;
+    border-radius:20px;
+    margin-bottom:20px;
 }
 
 .project-image img{
     width:100%;
+    height:auto;
     display:block;
+    border-radius:20px;
     transition:transform .45s ease;
 }
 
-.project-card:hover .project-image img{
+.project-card img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.project-card:hover{
     transform:scale(1.08);
 }
 .project-card{
